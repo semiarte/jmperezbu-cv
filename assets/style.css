@@ -55,6 +55,31 @@ h2, h3 { text-transform: uppercase; }
 }
 .company-date { margin-bottom: 1em; color: var(--primary-color); }
 
+nav {
+    margin-bottom: 1em;
+}
+nav li {
+    display: inline-block;
+    margin: 0 .15em;
+}
+
+nav li a {
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0;
+}
+
+a.nav-link {
+    transition: color 0.3s ease;
+}
+a:hover.nav-link {
+    color: #000000;
+}
+
+a.nav-link_active {
+    color: var(--accent-color);
+}
+
 header p, .job-description {
   font-family: "Nunito Sans", sans-serif;
 }
@@ -130,6 +155,11 @@ img.profile-photo {
     border-radius: 65px;
     border: 3px solid #fff;
     margin-bottom: .5em;
+}
+
+.education-items {
+    display: grid;
+    gap: 1em;
 }
 
 .education-item h4 {
